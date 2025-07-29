@@ -1,0 +1,25 @@
+
+# html lang
+language: en
+
+language:
+- zh-cn
+- en
+
+i18n_dir: :languages
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/snow of epoch.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/snow of epoch.js
+
