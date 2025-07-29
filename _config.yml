@@ -15,14 +15,24 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
+- /css/fonts.css
 - /css/snow_of_epoch.css
 - /css/menu-outer.css
+- /css/banner.css
+
 
 # scripts loaded in the end of the body
 scripts:
 - /js/snow_of_epoch.js
+- /js/banner.js
+
+# fonts
+fonts:
+- /ttf/huaguangmaotixingcao.ttf
 
 # banner image
 banner:
   enable: true
   image: /images/banner.png
+  title: 今朝雪
+  subtitle: 千秋功罪 皆付今朝风雪

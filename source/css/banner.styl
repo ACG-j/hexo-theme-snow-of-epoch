@@ -1,0 +1,115 @@
+#banner
+  background-color: #eeeeee
+  width: 100%
+  overflow: hidden
+
+.banner-image
+  width: 100%
+  position: relative
+
+.ink-splash
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  text-align: center
+  padding: 2rem
+  background: rgba(238, 238, 238, 0.7)
+  backdrop-filter: blur(5px)
+  border-radius: 10px
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+  z-index: 2
+  
+  &:before, &:after
+    content: ""
+    position: absolute
+    width: 60px
+    height: 60px
+    background-size: contain
+    background-repeat: no-repeat
+    opacity: 0.7
+  
+  &:before
+    left: 0
+    top: 0
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,50c0,0,20-25,40-25s40,25,40,25s-20,25-40,25S10,50,10,50z" fill="none" stroke="black" stroke-width="2"/></svg>')
+    transform: rotate(-45deg)
+  
+  &:after
+    right: 0
+    bottom: 0
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,50c0,0,20-25,40-25s40,25,40,25s-20,25-40,25S10,50,10,50z" fill="none" stroke="black" stroke-width="2"/></svg>')
+    transform: rotate(135deg)
+
+.title-container
+  position: relative
+  text-align: center
+  padding: 1rem
+
+.banner-title
+  font-family: "huaguangmaotixingcao"
+  font-size: 3.8rem
+  color: #000
+  margin-bottom: 0.5rem
+  position: relative
+  display: inline-block
+  letter-spacing: 0.1em
+  font-weight: 900
+  -webkit-text-stroke: 0.3px #000
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2),
+               3px 3px 2px rgba(0, 0, 0, 0.1),
+               1px 1px 3px rgba(0, 0, 0, 0.1)
+  
+  &:after
+    content: ""
+    position: absolute
+    bottom: -5px
+    left: 0
+    width: 100%
+    height: 2px
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent)
+
+.banner-subtitle
+  font-family: "huaguangmaotixingcao"
+  font-size: 1.6rem
+  color: #1a1a1a
+  margin-top: 1rem
+  letter-spacing: 0.15em
+  font-weight: 700
+  -webkit-text-stroke: 0.2px #000
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15),
+               2px 2px 2px rgba(0, 0, 0, 0.1)
+
+.banner-image
+  width: 100%
+  overflow: hidden
+  position: relative
+  
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(238, 238, 238, 0.1)
+    backdrop-filter: blur(0.5px)
+    z-index: 1
+  
+  img
+    width: 100%
+    height: auto
+    display: block
+    filter: contrast(1.02) brightness(0.98) saturate(0.95)
+
+.banner-content
+  position: relative
+  padding: 2rem
+
+.title-container
+  position: relative
+  max-width: 400px
+  padding: 2rem
+  writing-mode: vertical-lr // 竖排文字
+  background: linear-gradient(to right, rgba(238, 238, 238, 0.9), rgba(238, 238, 238, 0))
+

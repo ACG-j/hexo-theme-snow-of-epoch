@@ -49,10 +49,7 @@
 
 <div id="content-outer">
   <div id="content-inner">
-    {# {% autoescape false %}{{ body }}{% endautoescape %} #}
-    {{ css('css/index') }}
-<script src="{{ url_for('js/banner.js') }}"></script>
-{% block body %}{% endblock %}
+    {% block body %}{% endblock %}
   </div>
 </div>
 
