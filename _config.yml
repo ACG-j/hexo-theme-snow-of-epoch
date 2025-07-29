@@ -1,7 +1,5 @@
 
 # html lang
-language: en
-
 language:
 - zh-cn
 - en
@@ -17,9 +15,14 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/snow of epoch.css
+- /css/snow_of_epoch.css
+- /css/menu-outer.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/snow of epoch.js
+- /js/snow_of_epoch.js
 
+# banner image
+banner:
+  enable: true
+  image: /images/banner.png
