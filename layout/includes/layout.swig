@@ -35,7 +35,7 @@
     {% endfor %}
   {% endif %}
   {# load variable to js #}
-  {% include 'includes/config.swig' %}
+  {% include 'config.swig' %}
 </head>
 <body>
 
@@ -50,7 +50,9 @@
 <div id="content-outer">
   <div id="content-inner">
     {# {% autoescape false %}{{ body }}{% endautoescape %} #}
-    {% block body %}{% endblock %}
+    {{ css('css/index') }}
+<script src="{{ url_for('js/banner.js') }}"></script>
+{% block body %}{% endblock %}
   </div>
 </div>
 
