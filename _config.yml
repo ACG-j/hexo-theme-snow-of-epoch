@@ -19,7 +19,7 @@ stylesheets:
 - /css/snow_of_epoch.css
 - /css/menu-outer.css
 - /css/banner.css
-
+- /css/recent-posts.css
 
 # scripts loaded in the end of the body
 scripts:
