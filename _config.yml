@@ -25,6 +25,7 @@ stylesheets:
 scripts:
 - /js/snow_of_epoch.js
 - /js/banner.js
+- /js/menu-outer.js
 
 # fonts
 fonts:
