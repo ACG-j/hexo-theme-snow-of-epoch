@@ -24,8 +24,12 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/snow_of_epoch.js
+- /js/jquery.min.js
+- /js/jquery.pjax.min.js
+- /js/pjax.js
 - /js/banner.js
 - /js/menu-outer.js
+
 
 # fonts
 fonts:
