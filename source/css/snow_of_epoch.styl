@@ -2,6 +2,71 @@
 body
   margin 0
 
+#bottom-outer
+  margin-top 4rem
+  padding 2rem 0
+  position relative
+  
+  // 上方水墨边框
+  &:before
+    content ""
+    position absolute
+    top 0
+    left 50%
+    transform translateX(-50%)
+    width 80%
+    height 1px
+    background linear-gradient(90deg, transparent, rgba(139, 69, 19, 0.2), transparent)
+  
+  // 装饰性山水画元素
+  &:after
+    content ""
+    position absolute
+    top 1px
+    left 50%
+    transform translateX(-50%)
+    width 40px
+    height 2px
+    background linear-gradient(90deg, rgba(139, 69, 19, 0.1), transparent, rgba(139, 69, 19, 0.1))
+
+#bottom-inner
+  max-width 800px
+  margin 0 auto
+  text-align center
+  font-family "楷体", KaiTi, serif
+  color #666
+  font-size 0.9rem
+  line-height 1.8
+  padding 0 2rem
+  
+  a
+    color #8B4513
+    text-decoration none
+    position relative
+    transition all 0.3s ease
+    padding 0 2px
+    
+    // 下划线效果
+    &:after
+      content ""
+      position absolute
+      bottom -2px
+      left 0
+      width 0
+      height 1px
+      background rgba(139, 69, 19, 0.3)
+      transition width 0.3s ease
+    
+    &:hover
+      color #000
+      
+      &:after
+        width 100%
+  
+  br
+    display block
+    margin 0.5rem 0
+
 #paginator
   display flex
   justify-content center
