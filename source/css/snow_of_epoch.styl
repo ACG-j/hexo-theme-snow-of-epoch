@@ -1,3 +1,118 @@
 
 body
   margin 0
+
+#paginator
+  display flex
+  justify-content center
+  align-items center
+  margin 3rem auto
+  font-family "楷体", KaiTi, serif
+  
+  .page-number,
+  .extend
+    display inline-block
+    margin 0 0.5rem
+    padding 0.5rem 1rem
+    color #4A4A4A
+    text-decoration none
+    border-radius 4px
+    transition all 0.3s ease
+    position relative
+    background rgba(252, 251, 249, 0.7)
+    
+    // 水墨效果边框
+    &:before
+      content ""
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      border 1px solid rgba(139, 69, 19, 0.1)
+      border-radius 4px
+      transition all 0.3s ease
+    
+    // 悬浮效果
+    &:hover
+      color #8B4513
+      transform translateY(-2px)
+      background rgba(139, 69, 19, 0.05)
+      
+      &:before
+        border-color rgba(139, 69, 19, 0.3)
+        box-shadow 0 4px 8px rgba(139, 69, 19, 0.1)
+    
+  // 当前页样式
+  .current
+    color #8B4513
+    background rgba(139, 69, 19, 0.08)
+    font-weight bold
+    
+    &:before
+      border-color rgba(139, 69, 19, 0.2)
+    
+    &:hover
+      transform none
+      background rgba(139, 69, 19, 0.08)
+  
+  // 上一页下一页特殊样式
+  .extend
+    font-family "宋体", SimSun, serif
+    position relative
+    padding-left 1.5rem
+    padding-right 1.5rem
+    
+    &.prev:before,
+    &.next:before
+      content ""
+      position absolute
+      top 50%
+      width 12px
+      height 1px
+      background rgba(139, 69, 19, 0.5)
+      transition width 0.3s ease
+    
+    &.prev
+      padding-left 2rem
+      
+      &:before
+        left 0.5rem
+        transform-origin left center
+        transform rotate(-45deg)
+      
+      &:after
+        content ""
+        position absolute
+        left 0.5rem
+        top calc(50% - 4px)
+        width 12px
+        height 1px
+        background rgba(139, 69, 19, 0.5)
+        transform-origin left center
+        transform rotate(45deg)
+    
+    &.next
+      padding-right 2rem
+      
+      &:before
+        right 0.5rem
+        transform-origin right center
+        transform rotate(45deg)
+      
+      &:after
+        content ""
+        position absolute
+        right 0.5rem
+        top calc(50% - 4px)
+        width 12px
+        height 1px
+        background rgba(139, 69, 19, 0.5)
+        transform-origin right center
+        transform rotate(-45deg)
+    
+    &:hover
+      &:before,
+      &:after
+        width 16px
+        background rgba(139, 69, 19, 0.8)
